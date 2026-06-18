@@ -1,0 +1,5 @@
+python -m mlx_lm.generate \
+  --model llama31_8b_lse_mlx/ \
+  --adapter-path llama31_8b_lse_mlx/final_adapter/ \
+  --prompt "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nSen bir LSE finansal analistisin.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHisse: SHEL.L teknik analiz raporu hazirla. RSI: 72. MACD: pozitif. Trend: yukselis.<|eot_id|><|start_header_id|>assistant<|end_header_id|>" \
+  --max-tokens 500
