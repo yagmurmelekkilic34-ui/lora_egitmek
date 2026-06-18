@@ -1,3 +1,4 @@
+python -c "import pandas as pd; df=pd.read_csv('stock_news.csv'); print(df.columns.tolist())"
 # deneme 1
 python -m mlx_lm.generate \
   --model mlx-community/Meta-Llama-3.1-8B-Instruct-4bit \
