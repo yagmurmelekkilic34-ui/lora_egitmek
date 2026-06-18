@@ -1,0 +1,5 @@
+python -m mlx_lm.generate \
+  --model mlx-community/Meta-Llama-3.1-8B-Instruct-4bit \
+  --adapter-path llama31_8b_haber_modeli_mlx/final_adapter \
+  --prompt "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nSen haber başlıklarından borsa yönü tahmin eden yapay zeka tabanlı bir finans stratejistisin.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBugünün kritik ekonomi manşetleri şunlardır:\n1: Küresel teknoloji şirketleri rekor kâr açıkladı | 2: Merkez bankası faiz indirimine yeşil ışık yaktı | 3: Sanayi üretimi beklentilerin üzerinde geldi\n\nBu haberler ışığında piyasanın bugünkü kapanış yönü ne olur?<|eot_id|><|start_header_id|>assistant<|end_header_id|>" \
+  --max-tokens 100
