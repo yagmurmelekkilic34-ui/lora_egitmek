@@ -1,0 +1,20 @@
+# deneme 1
+  python -m mlx_lm.generate \
+  --model mlx-community/Meta-Llama-3.1-8B-Instruct-4bit \
+  --adapter-path llama31_8b_lse_mlx/final_adapter \
+  --prompt "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nSen bir LSE finansal analistisin.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHisse: BP.L teknik analiz raporu hazirla. RSI: 28. MACD: negatif. Trend: dusus.<|eot_id|><|start_header_id|>assistant<|end_header_id|>" \
+  --max-tokens 500
+
+  # deneme 2
+  python -m mlx_lm.generate \
+  --model mlx-community/Meta-Llama-3.1-8B-Instruct-4bit \
+  --adapter-path llama31_8b_lse_mlx/final_adapter \
+  --prompt "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nSen bir LSE finansal analistisin.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHisse: AZN.L teknik analiz raporu hazirla. RSI: 50. MACD: notr. Trend: yatay.<|eot_id|><|start_header_id|>assistant<|end_header_id|>" \
+  --max-tokens 500
+
+  # deneme 3
+  python -m mlx_lm.generate \
+  --model mlx-community/Meta-Llama-3.1-8B-Instruct-4bit \
+  --adapter-path llama31_8b_lse_mlx/final_adapter \
+  --prompt "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nSen bir LSE finansal analistisin.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nHisse: HSBA.L teknik analiz raporu hazirla. RSI: 65. MACD: pozitif. Trend: guclu yukselis.<|eot_id|><|start_header_id|>assistant<|end_header_id|>" \
+  --max-tokens 500
