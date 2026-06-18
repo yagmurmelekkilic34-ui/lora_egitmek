@@ -2,14 +2,14 @@
 python -m mlx_lm.generate \
   --model mlx-community/Meta-Llama-3.1-8B-Instruct-4bit \
   --adapter-path llama31_8b_haber_modeli_mlx/final_adapter \
-  --prompt "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nSen haber başlıklarından borsa yönü tahmin eden yapay zeka tabanlı bir finans stratejistisin.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBugünün kritik ekonomi manşetleri şunlardır:\n1: Küresel teknoloji şirketleri rekor kâr açıkladı | 2: Merkez bankası faiz indirimine yeşil ışık yaktı | 3: Sanayi üretimi beklentilerin üzerinde geldi\n\nBu haberler ışığında piyasanın bugünkü kapanış yönü ne olur?<|eot_id|><|start_header_id|>assistant<|end_header_id|>" \
+  --prompt "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nSen haber başlıklarından borsa yönü tahmin eden yapay zeka tabanlı bir finans stratejistisin.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBugünün kritik ekonomi manşetleri şunlardır:\n1: Sanayi üretimi verileri ve istihdam oranları bu ay rekor seviyede artış gösterdi | 2: Merkez bankası piyasaları rahatlatacak dev bir teşvik paketi açıkladı | 3: Küresel teknoloji şirketleri beklentilerin çok üzerinde çeyrek kârı bildirdi | 4: İhracat rakamlarında geçen yıla oranla büyük bir büyüme kaydedildi | 5: Tüketici güven endeksi son yılların en yüksek seviyesine ulaştı\n\nBu haberler ışığında piyasanın bugünkü kapanış yönü ne olur?<|eot_id|><|start_header_id|>assistant<|end_header_id|>" \
   --max-tokens 100
 
 #deneme 2
 python -m mlx_lm.generate \
   --model mlx-community/Meta-Llama-3.1-8B-Instruct-4bit \
   --adapter-path llama31_8b_haber_modeli_mlx/final_adapter \
-  --prompt "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nSen haber başlıklarından borsa yönü tahmin eden yapay zeka tabanlı bir finans stratejistisin.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBugünün kritik ekonomi manşetleri şunlardır:\n1: Petrol fiyatlarındaki ani artış enflasyon endişelerini tırmandırdı | 2: Büyük teknoloji hisselerinde sert satış dalgası başladı | 3: Küresel tedarik zincirinde yeni bir kriz kapıda\n\nBu haberler ışığında piyasanın bugünkü kapanış yönü ne olur?<|eot_id|><|start_header_id|>assistant<|end_header_id|>" \
+  --prompt "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n\nSen haber başlıklarından borsa yönü tahmin eden yapay zeka tabanlı bir finans stratejistisin.<|eot_id|><|start_header_id|>user<|end_header_id|>\n\nBugünün kritik ekonomi manşetleri şunlardır:\n1: Küresel petrol krizi ve lojistik sorunlar enflasyon endişelerini ciddi derecede tırmandırdı | 2: Ülkenin en büyük enerji şirketi borç yapılandırması isteyerek iflasın eşiğine geldi | 3: Merkez bankası faizleri beklenenden daha agresif bir şekilde yükseltme kararı aldı | 4: Perakende satışlar ve tüketim harcamalarında bu çeyrek sert bir düşüş yaşandı | 5: Borsada yabancı yatırımcı payı hızla azalırken panik satışları derinleşiyor\n\nBu haberler ışığında piyasanın bugünkü kapanış yönü ne olur?<|eot_id|><|start_header_id|>assistant<|end_header_id|>" \
   --max-tokens 100
 
 # deneme 3
